@@ -1,0 +1,76 @@
+baseURL = "https://zebsiecblog.github.io"
+title = "zebsiec"
+theme = "hugo-theme-stack"
+
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+
+[pagination]
+pagerSize = 10
+
+[params]
+mainSections = ["post"]
+featuredImageField = "image"
+rssFullContent = true
+
+[params.sidebar]
+emoji = "🍥"
+subtitle = "这是我的个人博客"
+avatar = "img/avatar.png"
+
+
+[params.article]
+headingAnchor = false
+math = false
+readingTime = true
+
+[params.article.license]
+enabled = false
+
+[params.widgets]
+homepage = [
+    { type = "search" },
+    { type = "archives" },
+    { type = "categories" },
+    { type = "tag-cloud" }
+]
+
+page = [
+    { type = "toc" }
+]
+
+[[menu.main]]
+identifier = "home"
+name = "首页"
+url = "/"
+weight = 10
+
+[menu.main.params]
+icon = "home"
+
+[[menu.main]]
+identifier = "archives"
+name = "归档"
+url = "/archives/"
+weight = 20
+
+[menu.main.params]
+icon = "archives"
+
+[[menu.main]]
+identifier = "search"
+name = "搜索"
+url = "/search/"
+weight = 30
+
+[menu.main.params]
+icon = "search"
+
+[[menu.main]]
+identifier = "links"
+name = "链接"
+url = "/links/"
+weight = 40
+
+[menu.main.params]
+icon = "link"
