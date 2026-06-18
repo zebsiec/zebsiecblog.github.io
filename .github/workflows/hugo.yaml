@@ -61,7 +61,7 @@ jobs:
       - name: Install Node.js dependencies
         run: |
           hugo mod npm pack
-          if [ -f package-lock.json ]; then npm ci; elif [ -f package.json ]; then npm install; fi
+          npm install
 
       - name: Build with Hugo
         env:
